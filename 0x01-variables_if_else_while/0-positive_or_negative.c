@@ -1,8 +1,10 @@
+/*
+ *main entrry
+ * more headers goes there */
+
+/*Description:  betty style doc for function main goes there */
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
 int main(void)
 {
 	int n;
