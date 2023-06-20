@@ -1,36 +1,22 @@
 #include <stdio.h>
+/**
+ * main - hello
+ * Description: world
+ * Return: 0
+ */
+int main(void)
+{
+	int a = 0, b = 1, x = 0;
+	int m = 0;
 
-
-	/**
-	 * main - finds and prints the sum of the even-valued terms
-	 * followed by a new line
-	 * Return: Always 0 (Success)
-	 */
-	int main(void)
+	while (x < 4000000)
 	{
-		int i;
-		unsigned long int j, k, next, sum;
-
-
-		j = 1;
-		k = 2;
-		sum = 0;
-
-
-		for (i = 1; i <= 33; ++i)
-		{
-			if (j < 4000000 && (j % 2) == 0)
-			{
-				sum = sum + j;
-			}
-			next = j + k;
-			j = k;
-			k = next;
-		}
-
-
-		printf("%lu\n", sum);
-
-
-		return (0);
+		x = a + b;
+		a = b;
+		b = x;
+		if (x % 2 == 0)
+			m += x;
 	}
+	printf("%i\n", m);
+	return (0);
+}
