@@ -1,32 +1,26 @@
-# include "main.h"
+#include "main.h"
 
 /**
- * print_square - my func
- * Description: hello
- * @size: yo
- * Returns: number
+ * print_square - prints a square, followed by a new line;
+ * @size: size of the square
  */
-
 void print_square(int size)
 {
-	int times = 0;
-
 	if (size <= 0)
 	{
 		_putchar('\n');
-		return;
 	}
-
-	while (times < size)
+	else
 	{
-		int i = 0;
+		int i, j;
 
-		while (i < size)
+		for (i = 0; i < size; i++)
 		{
-			_putchar('#');
-			i++;
+			for (j = 0; j < size; j++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
 		}
-		_putchar('\n');
-		times++;
 	}
 }
